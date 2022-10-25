@@ -52,7 +52,8 @@ public class ArregloDinamico {
 		/*el bucle del "for" anterior se utiliza en los Arrays estáticos
 		 *ya que se conoce el tamaño del Array*/
 		
-		
+		//ESTRUCTURA del for iterador
+		// for (<TIPODATO> nombrevariable : arreglo){}
 	}
 
 }
