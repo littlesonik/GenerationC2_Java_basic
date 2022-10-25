@@ -13,8 +13,11 @@ public class Funciones {
 		metodo2("Zapata");
 		metodo3(3);
 		metodo4(77, 9.9f);
-		String[] vocales = {"a","e","i","o","u"};
-		metodo5(vocales);
+		String[] arreglito = {"a","e","i","o","u"};
+		metodo5(arreglito);
+		System.out.println(retorno1());
+		Integer valorRetornado = retorno1();
+		System.out.println(valorRetornado/7);
 		
 	}
 	
@@ -45,6 +48,13 @@ public class Funciones {
 	
 	public static void metodo5 (String[] arreglito) {
 		System.out.println("Soy un arreglo " + Arrays.toString(arreglito));
+	}
+	
+	//funciones con retorno
+	//se cambia el "void" por el tipo de dato que quiero que me retorne
+	public static Integer retorno1() {
+		Integer totalAlumnos = 35;
+		return totalAlumnos;
 	}
 
 }
