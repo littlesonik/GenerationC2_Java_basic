@@ -1,6 +1,7 @@
 package cl.generation.f20221025;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArregloDinamico {
 
@@ -19,7 +20,15 @@ public class ArregloDinamico {
 		grupo4.add("Ignacia");
 		grupo4.add("Maria Teresa");
 		grupo4.add("Ivan");
-
+		
+		//Recorrer el ArrayList con while e iterator
+		
+		Iterator it = grupo4.iterator();
+		while (it.hasNext()) {// el Next me dice que a la siguiente vuelta tome el siguiente valor
+			System.out.println(it.next());
+		}
+		
+		System.out.println("----------------------------");
 		System.out.println(grupo4);
 
 		// 3- tamaño del ArrayList
@@ -38,6 +47,7 @@ public class ArregloDinamico {
 		System.out.println(grupo4);
 
 		grupo4.add("Maria Teresa");
+		
 		// 6- Recorrer el ArrayList
 		for (int i = 0; i < grupo4.size(); i++) {
 			System.out.println("integrantes grupo 4:" + grupo4.get(i));

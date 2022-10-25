@@ -12,21 +12,25 @@ public class Ejercicio1 {
 
 		Long intafloat2 = Long.parseLong(numero1 + "");// Long.parseLong("250")
 
-		long intafloat3 = (long) numero1;
+		Long intafloat3 = (long) numero1;
 
 		// de Long a float
-		long numero2 = 250l;
+		Long numero2 = 250l;
 
-		float longafloat = Float.valueOf(numero2);
+		Float longafloat = Float.valueOf(numero2);
 
-		float longafloat2 = Float.parseFloat(numero2 + "");
-
+		Float longafloat2 = Float.parseFloat(numero2 + "");
+		
+		Float fleteando = (float)numero2;
+		
 		// long a double
-		long numero3 = 250l;
+		Long numero3 = 250l;
 
 		double longadouble = Double.valueOf(numero3);
 
 		double longadouble2 = Double.parseDouble(numero3 + "");
+		
+		Double longadouble3 = (double) numero3;
 
 		// double a long
 		double numero4 = 250d;
