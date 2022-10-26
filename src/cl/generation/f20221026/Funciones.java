@@ -23,6 +23,9 @@ public class Funciones {
 		
 		String nombreCompleto = obtenerNombreCompleto("Iván", "Zapata", "Pichinao");
 		System.out.println("el nombre completo es: "+ nombreCompleto);
+		//aprender a usar swagger
+		
+		llamadaOtroMetodo();
 	}
 	
 	//DEFINICION o estructura de un metodo
@@ -62,7 +65,7 @@ public class Funciones {
 	}
 	
 	/**
-	 * 
+	 * Metodo que une todos los datos
 	 * @param nombre
 	 * @param apePaterno
 	 * @param apeMaterno
@@ -74,4 +77,8 @@ public class Funciones {
 		return nombreCompleto; //se retorna el contenido de la variable
 	}
 	
+	public static void llamadaOtroMetodo() {
+		System.out.println("llamada a otro metodo desde un metodo");
+		metodo4(1234, 53.6f);
+		}
 }
