@@ -1,4 +1,4 @@
-package cl.generation.f20221025;
+package cl.generation.f20221026;
 
 import java.util.Arrays;
 
@@ -15,10 +15,14 @@ public class Funciones {
 		metodo4(77, 9.9f);
 		String[] arreglito = {"a","e","i","o","u"};
 		metodo5(arreglito);
+		//retorno1(); //no hace nada con el valor retornado
 		System.out.println(retorno1());
 		Integer valorRetornado = retorno1();
-		System.out.println(valorRetornado/7);
+		System.out.println(valorRetornado);
+		System.out.println(valorRetornado/7); //esta forma es mas optima que llamar a la función cada vez
 		
+		String nombreCompleto = obtenerNombreCompleto("Iván", "Zapata", "Pichinao");
+		System.out.println("el nombre completo es: "+ nombreCompleto);
 	}
 	
 	//DEFINICION o estructura de un metodo
@@ -56,5 +60,18 @@ public class Funciones {
 		Integer totalAlumnos = 35;
 		return totalAlumnos;
 	}
-
+	
+	/**
+	 * 
+	 * @param nombre
+	 * @param apePaterno
+	 * @param apeMaterno
+	 * @return
+	 */
+	//de esta forma nos ayuda a que nos muestre el orden al llamar y completar los parametros del metodo
+	public static String obtenerNombreCompleto(String nombre, String apePaterno, String apeMaterno) {
+		String nombreCompleto = nombre+" "+apePaterno+" "+apeMaterno;
+		return nombreCompleto; //se retorna el contenido de la variable
+	}
+	
 }
