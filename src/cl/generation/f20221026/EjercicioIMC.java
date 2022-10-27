@@ -104,5 +104,6 @@ public class EjercicioIMC {
 			tipoIMC="está en rango OBESO";
 		}
 		return tipoIMC;
+		
 	}
 }
