@@ -74,10 +74,10 @@ public class ActividadGrupal {
 			System.out.println("*Ingresar valor de lado2 de triangulo en centimetros*");
 			float lado2 = sc.nextFloat();
 			
-			basetriangulo =lado1;
+			basetriangulo = lado1;
 			
-			float lado1Alcuadrado=lado1*lado1;
-			float lado2Alcuadrado=lado2*lado2;
+			float lado1Alcuadrado= Math.scalb(lado1, 2);
+			float lado2Alcuadrado= Math.scalb(lado2, 2);
 			
 			
 			if(lado1Alcuadrado >lado2Alcuadrado){
