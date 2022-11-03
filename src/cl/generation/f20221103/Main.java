@@ -43,6 +43,8 @@ public class Main {
 		
 		System.out.println(usuario.getDireccion());
 		
+		//Se agrega de manera directa los datos, ya que se inicializó el objeto Direccion 
+		//en el constructor vacío del Objeto Usuario
 		Usuario usuario2 = new Usuario();
 		usuario2.getDireccion().setCalle("Playa Blanca");
 		
